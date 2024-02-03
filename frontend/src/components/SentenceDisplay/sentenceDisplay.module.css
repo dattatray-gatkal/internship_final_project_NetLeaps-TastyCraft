@@ -1,0 +1,12 @@
+.sentence_container {
+    font-family: 'ProximaNova', Arial, 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #f03219;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    display: inline-block;
+  }
+  

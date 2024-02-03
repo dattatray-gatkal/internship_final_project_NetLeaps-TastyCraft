@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 5em;
+}
+
+.details {
+  width: 28rem;
+}
+
+.up_sub_btn {
+  margin-top: 5em;
+}
+
+.parent {
+  height: 27rem;
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-out;
+  border-radius: 1rem;
+  border: 1.5px solid #ffbbbb;
+}
+
+/* Add zoom-in effect on hover */
+.parent:hover {
+  transform: scale(1.01); 
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  border: 1.5px solid #ffbbbb;
+  border-radius: 1rem;
+  background-color: white;
+
+}

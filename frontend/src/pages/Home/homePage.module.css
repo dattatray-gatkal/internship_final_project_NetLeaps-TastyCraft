@@ -1,0 +1,75 @@
+.container{
+    padding-left:44%;
+    margin-top:0rem;
+}
+
+
+
+.container::before{
+    content: '';
+    position:absolute;
+    width: 100px;
+    height:3px;
+    background-color:crimson;
+    bottom:-1.1in    ;
+    left:50%;
+    transform: translateX(-50%);
+    animation:animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        width:100px;
+    }
+
+    50%{
+        width:200px;
+    }
+
+    100%{
+        width:200px;
+    }
+}
+
+.container{
+    padding-top: 0px; 
+}
+
+/* .main_container{
+    background-image: url("D:\NetLeap_Final_Project\FoD2\TastyCraft\frontend\public\pictures\bg1.jpg");
+    
+} */
+
+
+/* ORDER NOW BUTTON */
+
+.whitee{
+    
+    background-color: #f03219;
+    color:rgb(252, 238, 238);
+    text-transform: capitalize;
+    
+    border: none;
+    font-size:0.9375rem;
+    font-weight:600;
+    box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 10rem;
+    position: absolute;
+    top: 30.5em;
+    left: 16.5em;
+}
+.whitee:hover{
+    background-color: transparent;
+    color:tomato;
+}
+.whitee i:hover{
+    
+    transform: translateX(7px);
+}
+
+.container{
+    padding-top: 2em;
+}

@@ -1,0 +1,204 @@
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding:70;
+  
+}
+
+.list li a {
+  border: 2px solid black;
+  height: 22.5rem;
+  width: 20rem;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  margin: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #e72929;
+  
+}
+.list li a :hover{
+  transform: skew();
+}
+/* -------------------------------------- */
+.list li a {
+  
+  top: 0px;
+  position: relative;
+  border-radius: 4px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -10px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    /* background: #00838d; */
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(2.15);
+  }
+}
+
+
+/* ------------------------------------------- */
+.image {
+  object-fit: cover;
+  height: 14.5rem;
+}
+.list a :hover{
+  transform: skew();
+  transition: linear;
+  
+}
+
+.content {
+  margin-top: 0.3rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  height: 7rem;
+  
+}
+
+.favorite {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+
+.favorite.not {
+  color: grey;
+}
+
+.stars {
+  margin: 0.5rem 0;
+}
+
+.product_item_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.origins span {
+  border-radius: 2rem;
+  background-color: whitesmoke;
+  display: inline-block;
+  font-size: 0.8rem;
+  color: grey;
+  margin-right: 0.3rem;
+  padding: 0 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.origins {
+  flex: 9;
+}
+
+.cook_time {
+  font-size: 0.9rem;
+  flex: 3;
+  text-align: right;
+}
+
+.price {
+  position: absolute;
+  bottom: 0;
+  left: 0.9rem;
+  background-color: white;
+  padding: 0.3rem 100% 0 0;
+  color: #414141;
+  margin-top: 0.7rem;
+  font-size: 1.1rem;
+}
+
+/* CSS CODE FOR HOVERING EFFECT ON THE IMAGE*/
+
+.image {
+  object-fit: cover;
+  height: 14.5rem;
+  width: 100%; /* Make sure the image takes 100% width */
+  transition: 0.3s;
+  background: rgb(213, 86, 86);
+}
+
+.image:hover {
+  opacity: 0.5;
+}
+
+.image:hover + .order_button {
+  opacity: 1;
+}
+
+.order_button {
+  position: absolute;
+  font-size: 25px;
+  margin-bottom: 130px;
+  color: black;
+  background-color: #fac031;
+  font-family: polo;
+  z-index: 5;
+  opacity: 0;
+  transition: 0.3s;
+  left: 32%;
+  top: 30%;
+  pointer-events: none; /* Disable pointer events when opacity is 0 */
+  border-radius: 10px;
+  border:none;
+  transform: translateY(45px);
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.image:hover .order_button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.order_button p {
+  opacity: 1; /* Initially hide the <p> element */
+  transition: 0.3s;
+  padding:5px;
+  margin-bottom: 0;
+}
+
+
+.parentOfAll{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.order_button{
+  transform: translateY(45px);
+  z-index: 5;
+  transition: 0.3s;
+}
+
+
