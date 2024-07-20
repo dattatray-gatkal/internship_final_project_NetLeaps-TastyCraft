@@ -10,7 +10,7 @@ In the project directory, you can run:
 
 ### `npm dev`
 
-# HITS TO RUN THE PROJECT
+# HINTS TO RUN THE PROJECT
 
 1. Change the path for the background image in index.css
 2. Add MongoDB URI & JWT Token in .env file
