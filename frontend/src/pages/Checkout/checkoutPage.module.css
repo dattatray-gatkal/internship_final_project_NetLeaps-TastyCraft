@@ -4,6 +4,7 @@
   margin: 0 0 6rem 2rem;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .content {
@@ -59,6 +60,7 @@
 .p_container{
   display:flex;
   justify-content: space-evenly;
+  margin-left:0px;
   /* position: relative; */
   
 }

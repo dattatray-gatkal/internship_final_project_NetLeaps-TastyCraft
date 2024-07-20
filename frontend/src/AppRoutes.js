@@ -11,13 +11,8 @@ import PaymentPage from "./pages/Payment/PaymentPage";
 import ProfilePage from "./pages/Profile/ProfilePage";
 import OrdersPage from "./pages/Orders/OrdersPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import AdminRoute from "./components/AdminRoute/AdminRoute";
-import FoodsAdminPage from "./pages/FoodsAdmin/FoodsAdminPage";
-import FoodEditPage from "./pages/FoodEdit/FoodEditPage";
-import UsersPage from "./pages/UsersPage/UsersPage";
-import UserEditPage from "./pages/UserEdit/UserEditPage";
 import AboutUs from "./components/AboutUs/AboutUs";
-
+import FoodEditPage from "./pages/FoodEdit/FoodEditPage";
 export default function AppRoutes() {
   return (
     <Routes>
@@ -69,48 +64,6 @@ export default function AppRoutes() {
           <AuthRoute>
             <Dashboard />
           </AuthRoute>
-        }
-      />
-      <Route
-        path="/admin/foods/:searchTerm?"
-        element={
-          <AdminRoute>
-            <FoodsAdminPage />
-          </AdminRoute>
-        }
-      />
-
-      <Route
-        path="/admin/addFood"
-        element={
-          <AdminRoute>
-            <FoodEditPage />
-          </AdminRoute>
-        }
-      />
-      <Route
-        path="/admin/editFood/:foodId"
-        element={
-          <AdminRoute>
-            <FoodEditPage />
-          </AdminRoute>
-        }
-      />
-      <Route
-        path="/admin/users/:searchTerm?"
-        element={
-          <AdminRoute>
-            <UsersPage />
-          </AdminRoute>
-        }
-      />
-
-      <Route
-        path="/admin/editUser/:userId"
-        element={
-          <AdminRoute>
-            <UserEditPage />
-          </AdminRoute>
         }
       />
     </Routes>

@@ -150,7 +150,7 @@ function Footer() {
             {/* ---------------------------------------------------------------------------- */}
           </div>
         </div>
-        <p className={classes.footer_note}>Designed & Created by The DOG</p>
+        <p className={classes.footer_note}>Enjoy the Tasty Meal !!!</p>
       </footer>
     </>
   );
